@@ -1,171 +1,151 @@
 <h1 align="center">
-  <img src="https://github.com/user-attachments/assets/71b88897-aa64-444d-9266-785b1df9330e" alt="Random Iceberg Banner" width="600"/>
+
+  <img src="https://github.com/user-attachments/assets/8fa6cd21-db22-49b3-a180-a8625d0e1ccd" alt="Random Iceberg Organization" width="400"/>
 </h1>
 
 <p align="center">
-  <strong>Building production-ready AI web applications with modern technology stacks</strong>
+  <strong>Organization-wide GitHub configuration and profile</strong>
 </p>
 
 <p align="center">
   <a href="https://github.com/random-iceberg">
-    <img src="https://img.shields.io/badge/GitHub-Random_Iceberg-blue?style=flat-square&logo=github" alt="GitHub Organization">
+    <img src="https://img.shields.io/badge/Organization-Random_Iceberg-blue?style=flat-square&logo=github" alt="GitHub Organization">
   </a>
-  <a href="https://www.python.org/downloads/release/python-3130/">
-    <img src="https://img.shields.io/badge/Python-3.13+-blue.svg?style=flat-square&logo=python&logoColor=white" alt="Python 3.13+">
-  </a>
-  <a href="https://reactjs.org/">
-    <img src="https://img.shields.io/badge/React-19+-61DAFB.svg?style=flat-square&logo=react&logoColor=white" alt="React 19+">
-  </a>
-  <a href="https://www.docker.com/">
-    <img src="https://img.shields.io/badge/Docker-Enabled-2496ED.svg?style=flat-square&logo=docker&logoColor=white" alt="Docker Enabled">
-  </a>
-  <a href="https://fastapi.tiangolo.com/">
-    <img src="https://img.shields.io/badge/FastAPI-009688.svg?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
-  </a>
-  <a href="LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="MIT License">
+  <a href="https://github.com/random-iceberg/docker-compose">
+    <img src="https://img.shields.io/badge/Main_Project-Titanic_App-green?style=flat-square&logo=docker" alt="Main Project">
   </a>
 </p>
 
 ---
 
-## 🚀 Featured Project: Titanic Survivor Prediction
+## 📋 About This Repository
+
+This repository contains organization-wide GitHub configuration files, templates, and documentation for the **Random Iceberg** organization.
+
+### 📁 Contents
+
+- **Organization Profile**: README displayed on the organization page
+- **Issue Templates**: Standardized issue reporting templates
+- **Pull Request Templates**: Consistent PR submission guidelines
+- **GitHub Actions Workflows**: Shared CI/CD workflows
+- **Community Guidelines**: Code of conduct and contribution guidelines
+
+---
+
+## 🚀 Featured Project
+
+### [Titanic Survivor Prediction Application](https://github.com/random-iceberg/docker-compose)
+
+> [!TIP]
+> **Ready to explore?** Visit our main project repository for a full-stack AI web application!
 
 **A production-ready web application that predicts Titanic passenger survival using machine learning models.**
 
-### 🏗️ Architecture Overview
+**Key Features:**
+- 🤖 **5 ML Algorithms** (Random Forest, SVM, Decision Tree, KNN, Logistic Regression)
+- 🔐 **JWT Authentication** with role-based access control
+- 📱 **Mobile-First Design** with responsive UI
+- 🐳 **One-Command Deployment** using Docker Compose
+- ⚡ **Real-time Predictions** with <150ms latency
 
-```mermaid
-graph TB
-    subgraph "Frontend"
-        A[React TypeScript SPA]
-        B[Nginx Reverse Proxy]
-    end
-    
-    subgraph "Backend Services"
-        C[FastAPI Web Backend]
-        D[FastAPI ML Service]
-    end
-    
-    subgraph "Data Layer"
-        E[PostgreSQL Database]
-        F[Model Artifacts]
-    end
-    
-    A --> B
-    B --> C
-    C --> D
-    C --> E
-    D --> F
-    
-    style A fill:#61dafb
-    style C fill:#009688
-    style D fill:#009688
-    style E fill:#336791
-```
-
-### ✨ Key Features
-
-- 🤖 **5 ML Algorithms**: Random Forest, SVM, Decision Tree, KNN, Logistic Regression
-- 🔐 **JWT Authentication**: Secure user registration and login
-- 👨‍💼 **Admin Console**: Train, evaluate, and manage ML models
-- 📱 **Mobile-First Design**: Responsive across all devices
-- 🐳 **Containerized**: One-command deployment with Docker Compose
-- ⚡ **Real-time Predictions**: Instant survival probability calculations
-- 📊 **Prediction History**: Track and analyze user predictions
-- 🎯 **Role-Based Access**: Anonymous, User, and Admin permission levels
-
-### 🛠️ Technology Stack
-
-| Category | Technologies |
-|----------|-------------|
-| **Frontend** | React 19, TypeScript, Tailwind CSS, Vite |
-| **Backend** | FastAPI, Python 3.13, SQLAlchemy, Alembic |
-| **ML/AI** | scikit-learn, pandas, NumPy |
-| **Database** | PostgreSQL, pgAdmin |
-| **DevOps** | Docker, Docker Compose, GitHub Actions |
-| **Testing** | Pytest, React Testing Library, Playwright |
-
-### 📁 Repository Structure
-
-| Repository | Description | Tech Stack |
-|------------|-------------|-----------|
-| **[docker-compose](https://github.com/random-iceberg/docker-compose)** | 🏠 Main orchestration repository | Docker Compose, Nginx |
-| **[web-frontend](https://github.com/random-iceberg/web-frontend)** | 🎨 React TypeScript frontend | React, TypeScript, Tailwind |
-| **[web-backend](https://github.com/random-iceberg/web-backend)** | ⚙️ FastAPI web backend | FastAPI, PostgreSQL, JWT |
-| **[model-backend](https://github.com/random-iceberg/model-backend)** | 🧠 ML inference service | FastAPI, scikit-learn |
-
-### 🚀 Quick Start
-
-> [!TIP]
-> **Zero Configuration Deployment** - Get the entire application running with a single command!
-
+**Quick Start:**
 ```bash
-# Clone the main repository
 git clone --recurse-submodules https://github.com/random-iceberg/docker-compose.git
 cd docker-compose
-
-# Start all services
 docker compose up --build -d
-
-# Access the application
 open http://localhost:8080
 ```
 
-### 🎯 Project Highlights
+---
 
-> [!NOTE]
-> This project was developed as part of **Software Engineering coursework** at **Deggendorf Institute of Technology (DIT)** and demonstrates enterprise-level development practices.
+## 🏗️ Repository Structure
 
-**What makes this project special:**
-
-- ✅ **Production-Ready**: Full CI/CD pipeline, automated testing, health checks
-- ✅ **Scalable Architecture**: Microservices design with clear separation of concerns
-- ✅ **Security First**: JWT authentication, input validation, SQL injection prevention
-- ✅ **Best Practices**: Clean code, comprehensive documentation, test coverage
-- ✅ **Modern Stack**: Latest versions of React, FastAPI, Python, and PostgreSQL
-
-### 👥 Team
-
-**Team Random Iceberg** - Software Engineering students specializing in full-stack development and machine learning applications.
-
-| Role | Responsibilities |
-|------|-----------------|
-| **Full-Stack Developers** | Frontend React development, UI/UX design, integration |
-| **Backend Engineers** | FastAPI development, database design, authentication |
-| **ML Engineers** | Model training, inference optimization, data preprocessing |
-| **DevOps Engineers** | Containerization, CI/CD, deployment automation |
-
-### 📊 Project Metrics
-
-- **Lines of Code**: 12,000+
-- **Test Coverage**: 80%+
-- **Docker Services**: 4 containerized microservices
-- **API Endpoints**: 20+ RESTful endpoints
-- **Browser Support**: Chrome 119+, Firefox 122+, Safari 16.1+
-- **Response Time**: <150ms prediction latency
-
-### 🏆 Academic Achievement
-
-> [!IMPORTANT]
-> Successfully completed as part of **AIN-B Software Engineering** coursework under **Prof. Dr. Christoph Schober** at Deggendorf Institute of Technology.
+| Repository | Description | Tech Stack |
+|------------|-------------|-----------|
+| **[docker-compose](https://github.com/random-iceberg/docker-compose)** | 🏠 Main orchestration & documentation | Docker, Compose |
+| **[web-frontend](https://github.com/random-iceberg/web-frontend)** | 🎨 React TypeScript frontend | React 19, TypeScript, Tailwind |
+| **[web-backend](https://github.com/random-iceberg/web-backend)** | ⚙️ FastAPI web backend | FastAPI, PostgreSQL, JWT |
+| **[model-backend](https://github.com/random-iceberg/model-backend)** | 🧠 ML inference service | FastAPI, scikit-learn |
+| **[docker-compose.wiki](https://github.com/random-iceberg/docker-compose.wiki)** | 📚 Project documentation | Markdown, Git |
 
 ---
-<!-- 
-## 🔗 Links
 
-- **[Live Demo](http://localhost:8080)** (after local deployment)
-- **[API Documentation](http://localhost:8080/api/docs)** (Swagger UI)
-- **[Project Documentation](https://github.com/random-iceberg/docker-compose/tree/main/docs)**
- -->
+## 🛠️ Development Standards
+
+### Code Quality
+- **Python**: Ruff formatting, type hints, pytest
+- **TypeScript**: ESLint + Prettier, strict TypeScript
+- **Documentation**: Comprehensive README files, inline comments
+- **Testing**: >80% test coverage across all services
+
+### Git Workflow
+- **Branching**: Feature branches with descriptive names
+- **Commits**: Conventional commit messages
+- **Pull Requests**: Required reviews, automated testing
+- **Releases**: Semantic versioning with automated releases
+
+### CI/CD Pipeline
+- **Build**: Docker multi-stage builds
+- **Test**: Automated unit, integration, and E2E tests
+- **Deploy**: GitHub Container Registry
+- **Quality**: Code coverage, security scanning
+
+---
+
+## 🎓 Academic Context
+
+> [!NOTE]
+> **University Project**: Developed as part of **Software Engineering** coursework at **Deggendorf Institute of Technology (DIT)** under **Prof. Dr. Christoph Schober**.
+
+This project demonstrates:
+- **Enterprise-level architecture** with microservices
+- **Modern development practices** with containerization
+- **AI/ML integration** in web applications
+- **Full-stack development** with React and FastAPI
+- **Production deployment** with Docker Compose
+
+---
+
+## 👥 Team Random Iceberg
+
+**Software Engineering students** specializing in full-stack development and machine learning applications.
+
+| Specialization | Focus Areas |
+|---------------|-------------|
+| **Full-Stack Development** | React, TypeScript, Python, FastAPI |
+| **Machine Learning** | scikit-learn, model training, inference optimization |
+| **DevOps & Infrastructure** | Docker, CI/CD, containerization |
+| **UI/UX Design** | Responsive design, accessibility, user experience |
+
+---
+
+## 📊 Project Metrics
+
+- **12,000+** lines of code
+- **4** containerized microservices
+- **20+** RESTful API endpoints
+- **5** machine learning algorithms
+- **80%+** test coverage
+- **3** supported browsers (Chrome, Firefox, Safari)
+
+---
+
+## 🔗 Quick Links
+
+- **[🏠 Main Project](https://github.com/random-iceberg/docker-compose)** - Complete application
+- **[📚 Documentation](https://github.com/random-iceberg/docker-compose/tree/main/docs)** - Technical docs
+- **[🚀 Quick Start Guide](https://github.com/random-iceberg/docker-compose#-quick-start-zero-configuration)** - Get started in minutes
+- **[🛠️ Development Setup](https://github.com/random-iceberg/docker-compose#%EF%B8%8F-development-workflow)** - Development environment
+
+---
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Projects under this organization are licensed under the MIT License unless otherwise specified.
 
 ---
 
 <p align="center">
-  <strong>Built with ❤️ by Team Random Iceberg</strong><br>
-  <em>Showcasing modern web development and machine learning integration</em>
+  <strong>Showcasing modern software engineering practices</strong><br>
+  <em>From concept to production deployment</em>
 </p>
